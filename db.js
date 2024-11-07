@@ -1,4 +1,4 @@
-
+//ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
 const mysql = require('mysql2/promise');
 require('dotenv').config();
 const pool = mysql.createPool({
